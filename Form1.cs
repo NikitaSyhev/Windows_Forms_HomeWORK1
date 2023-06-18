@@ -37,14 +37,15 @@ namespace WindowsFormsApp1
             action = button.Text;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            textBox2.Text = textBox2.Text;
-        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             int n2 = int.Parse(textBox1.Text);
+        }
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            int n1 = int.Parse(textBox2.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -84,19 +85,13 @@ namespace WindowsFormsApp1
             {
                 result = n1 / n2;
             }
-            if (action == "=")
-            {
+            
                 textBox3.Text = result.ToString();
-            }
+            
             
             
         }
 
-        private void textBox2_TextChanged_1(object sender, EventArgs e)
-        {
-            int n1 = int.Parse(textBox2.Text);
 
-            
-        }
     }
 }
